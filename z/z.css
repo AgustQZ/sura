@@ -1,0 +1,60 @@
+@import url("../css/01reseteosYvariables.css");
+@import url("../css/02botones.css");
+
+/*------ESTILOS ESTA PAGINA TAMAÑO ESCRITORIO--------------------*/
+.container-error {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-between;
+    row-gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 150px auto;
+    /* background-color: aquamarine; */
+}
+
+.msn-sorry {
+    margin: auto 0;
+    /* border: 2px dashed red; */
+}
+
+.msn-sorry a {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.msn-sorry a:last-of-type {
+    margin-left: 1rem;
+}
+
+.img-sorry {
+    /* border: 2px dashed red; */
+    display: flex;
+    justify-content: end;
+}
+
+/*--------------ESTILOS TAMAÑO TABLETA --------------------*/
+@media (max-width: 768px) {
+    .container-error {
+        grid-template-columns: 1fr;
+    }
+
+    .msn-sorry {
+        margin: auto;
+        /* border: 2px dashed red; */
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 12px 16px;
+    }
+}
+
+/*--------------ESTILOS TAMAÑO CELULAR --------------------*/
+@media (max-width: 343px) {
+    .btn {
+        font-size: 12px;
+        padding: 10px 14px;
+        letter-spacing: 0;
+    }
+}

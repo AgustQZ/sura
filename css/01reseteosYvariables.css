@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+
+:root {
+    --font: "Barlow", sans-serif;
+    --color-blueSURA: #0033A0;
+    --color-blueSURA-lighten: #8090b8;
+    --color-cyanSURA: #00aec7;
+    --color-yellowSURA: #e3e829;
+    --color-graySURA: #53565a;
+    --color-lightGraySURA: #ecf0f1;
+    --color-redSURA: #E4002B;
+    --color-redSURA-darken: #aa001f;
+    --color-whiteSURA: #fff;
+    --shadow: 0px 2px 30px #e0e5f0;
+    --transition: all 0.3s ease;
+}
+
+/* -------------Reseteo----------------- */
+html {
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

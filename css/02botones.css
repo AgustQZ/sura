@@ -1,0 +1,175 @@
+/* -------------BOTON BASE--------------- */
+.btn {
+    width: max-content;
+    height: auto;
+    padding: 12px 26px;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    font: normal 700 14px/19px var(--font);
+    text-align: center;
+    text-decoration: none;
+    position: relative
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/*--------------botones secundarios --------------------*/
+/* flecha */
+.btn-arrow {
+    content: "";
+    position: absolute;
+    background: url(https://cdnsegurossuraprd.azureedge.net/sitefinity/docs/default-source/landing-yapp/icon-arrow.svg?sfvrsn=8d55326d_2) no-repeat center center;
+    background-size: 24px;
+    background-position: 0px 0px;
+    width: 24px;
+    height: 24px;
+}
+
+/* descarga */
+.btn-download {
+    content: "";
+    position: absolute;
+    background: url(/docs/default-source/landing-sección-siniestros-2022/icon-download-button.svg?sfvrsn=3f7fdf52_2) no-repeat center center;
+    background-size: 16px;
+    background-position: 0px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+/*--------------botones unicos --------------------*/
+/* amarillo */
+.btn-call-yellow {
+    color: var(--color-blueSURA);
+    background-color: var(--color-yellowSURA);
+    transition: var(--transition);
+}
+
+.btn-call-yellow:hover {
+    color: var(--color-whiteSURA);
+    background-color: var(--color-blueSURA);
+    transition: var(--transition);
+}
+
+/* azul */
+.btn-call-blue {
+    color: var(--color-whiteSURA);
+    background-color: var(--color-blueSURA);
+    transition: var(--transition);
+}
+
+.btn-call-blue:hover {
+    color: var(--color-blueSURA);
+    background-color: var(--color-yellowSURA);
+    transition: var(--transition);
+}
+
+/* blanco */
+.btn-call-white {
+    color: var(--color-blueSURA);
+    background-color: var(--color-yellowSURA);
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.btn-call-white:hover {
+    color: var(--color-blueSURA);
+    background-color: var(--color-lightGraySURA);
+    border: 2px solid var(--color-whiteSURA);
+    transition: var(--transition);
+}
+
+/* blanco borde azul */
+.btn-border-blue {
+    color: var(--color-blueSURA);
+    background-color: var(--color-whiteSURA);
+    border: 2px solid var(--color-blueSURA);
+    transition: var(--transition);
+}
+
+.btn-border-blue:hover {
+    background-color: var(--color-blueSURA-lighten);
+    transition: var(--transition);
+}
+
+/* azul sin borde */
+.btn-noborder-blue {
+    color: var(--color-blueSURA);
+    transition: var(--transition);
+}
+
+/* youtube */
+.btn-youtube {
+    color: var(--color-whiteSURA);
+    height: 48px;
+    background-color: var(--color-redSURA);
+    border: 2px solid var(--color-redSURA);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.btn-youtube:hover {
+    color: var(--color-whiteSURA);
+    background-color: var(--color-redSURA-darken);
+    border: 2px solid var(--color-redSURA-darken);
+    transition: var(--transition);
+}
+
+/* azul con borde y flecha */
+.btn-border-blue-arrow {
+    color: var(--color-blueSURA);
+    background-color: var(--color-whiteSURA);
+    padding-left: 3rem;
+    border: 2px solid var(--color-blueSURA);
+    transition: var(--transition);
+}
+
+.btn-border-blue-arrow::before {
+    left: 1rem;
+}
+
+.btn-border-blue-arrow:hover {
+    background-color: var(--color-blueSURA-lighten);
+    transition: var(--transition);
+}
+
+/* azul con borde y descarga */
+.btn-border-blue-download {
+    color: var(--color-blueSURA);
+    background-color: var(--color-whiteSURA);
+    border: 2px solid var(--color-blueSURA);
+    padding-left: 3rem;
+    transition: var(--transition);
+}
+
+.btn-border-blue-download::before {
+    left: 1rem;
+}
+
+.btn-border-blue-download:hover {
+    background-color: lighten(var(--color-blueSURA), 60%);
+    transition: var(--transition);
+}
+
+/* amarillo con flecha */
+.btn-yellow-arrow {
+    color: var(--color-blueSURA);
+    background-color: var(--color-yellowSURA);
+    padding-left: 3rem;
+    transition: var(--transition);
+}
+
+.btn-yellow-arrow::before {
+    left: 1rem;
+}
+
+.btn-yellow-arrow:hover {
+    color: var(--color-whiteSURA);
+    background-color: var(--color-blueSURA);
+    transition: var(--transition);
+}
+
+.btn-yellow-arrow:hover::before {
+    filter: invert(100%) sepia(100%) saturate(94%) hue-rotate(165deg) brightness(110%) contrast(100%);
+}
