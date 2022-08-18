@@ -4,7 +4,8 @@
 /*------ESTILOS ESTA PAGINA TAMAÑO ESCRITORIO--------------------*/
 .container-success {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 514px;
     align-content: space-between;
     row-gap: 2rem;
     width: 90%;
@@ -54,11 +55,11 @@
 
 .form-exito label {
     display: block;
-    padding-left: 15%;
+    padding-left: 18%;
     color: var(--color-blueSURA);
     font-weight: 400;
     font-size: 0.667em;
-    margin-top: 2rem;
+    margin: 2rem 0 0.5rem;
 }
 
 
@@ -95,7 +96,78 @@
     text-align: center;
 }
 
-.form-exito p:last-of-type span {
+.form-exito p strong {
     color: var(--color-cyanSURA);
-    font-weight: 700;
+}
+
+.img-success {
+    display: grid;
+    grid-template-rows: 60% 25% 1fr;
+}
+
+.img-success img {
+    margin-left: auto;
+    object-fit: cover;
+}
+
+.img-success>div {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-lightGraySURA);
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+
+.img-success p {
+    width: 60%;
+    color: var(--color-blueSURA);
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.img-success strong {
+    color: var(--color-cyanSURA);
+}
+
+.img-success>div a {
+    margin: auto;
+    height: 2.6rem;
+    line-height: 1.3rem;
+}
+
+.img-success>a {
+    margin: 2rem auto 0;
+    text-decoration: none;
+    color: var(--color-blueSURA);
+}
+
+/*--------------ESTILOS TAMAÑO TABLETA --------------------*/
+@media (max-width: 1150px) {
+    .container-success {
+        grid-template-columns: 1fr;
+    }
+
+    .form-exito {
+        margin: auto;
+        /* border: 2px dashed red; */
+    }
+
+    .img-success img {
+        margin: 0 auto;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 12px 16px;
+    }
+}
+
+/*--------------ESTILOS TAMAÑO CELULAR --------------------*/
+@media (max-width: 343px) {
+    .btn {
+        font-size: 12px;
+        padding: 10px 14px;
+        letter-spacing: 0;
+    }
 }
