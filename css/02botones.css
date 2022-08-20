@@ -7,6 +7,9 @@
     letter-spacing: 1px;
     font: normal 700 14px/19px var(--font);
     text-align: center;
+    display: block;
+    margin: 0 auto;
+    /* ---------- */
     text-decoration: none;
     position: relative
 }
@@ -68,15 +71,13 @@
 /* blanco */
 .btn-call-white {
     color: var(--color-blueSURA);
-    background-color: var(--color-yellowSURA);
     border: 2px solid transparent;
     transition: var(--transition);
 }
 
 .btn-call-white:hover {
-    color: var(--color-blueSURA);
-    background-color: var(--color-lightGraySURA);
-    border: 2px solid var(--color-whiteSURA);
+    color: var(--color-whiteSURA);
+    background-color: var(--color-blueSURA);
     transition: var(--transition);
 }
 
